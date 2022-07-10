@@ -1,0 +1,69 @@
+<div class="warranty-content">
+    <div class="warranty-row first">
+        <div class="warranty-title">Check Your Warranty Status</div>
+        <div class="warranty-sub-title">Review your Xiomi Warranty status and eligibility.</div>
+    </div>
+    <div class="warranty-row second">
+        <form #f="ngForm" name="warrantyInputForm">
+            <div class="warranty-input-container">
+                <div class="inline-block number-container form-group">
+                    <input matInput required type="text" pattern="(^\d{5}\/\d{8})$|(^\d{15}$)" class="find-number-text"
+                        id="findNumber" name="findNumber" [(ngModel)]="selected.findNumber" #findNumber="ngModel"
+                        placeholder="Enter your serial number or IMEI" />
+                    <p *ngIf="findNumber.errors?.['pattern']" class="has-error">
+                        Enter 15 digit IMEI or Serial number in the right format : '12345/12345678'.
+                    </p>
+                </div>
+                <div class="inline-block form-group">
+                    <mat-select [required]="true" [(ngModel)]="selected.countryCode" id="countryCode" name="countryCode"
+                        class="country-code-sel" placeholder="Choose your country">
+                        <mat-option *ngFor="let c of common.countries" [value]="c.Code">
+                            {{c.Name}}
+                        </mat-option>
+                    </mat-select>
+                </div>
+            </div>
+            <div class="form-group">
+                <button mat-button [disabled]="!(f.valid && selected.countryCode > 0)"
+                    class="continue-btn btn btn-primary" (click)="onClickGetWarranty()">Continue</button>
+            </div>
+        </form>
+    </div>
+    <div class="warranty-row third">
+        <div @fade *ngIf="!hideSuccessMessage" class="success-notification">
+            <table>
+                <tr>
+                    <td class="td1">
+                        <mat-icon aria-label="Example home icon">done</mat-icon>
+                    </td>
+                    <td class="td2">
+                        <div>Warranty details get successfully !</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <table class="resp-table" *ngIf="isShowResults">
+                        <tr>
+                            <th colspan="2" class="resp-header">
+                                Warranty Details
+                            </th>
+                        </tr>
+                        <tr *ngFor="let config of common.responseConfig['returnImeiDatalist']">
+                            <td class="resp-title" *ngIf="config.visible">
+                                {{config.title}}
+                            </td>
+                            <td *ngIf="config.visible">
+                                {{config.convertor ? evaluate(config.convertor)() : data.result[config.propName]}}
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>

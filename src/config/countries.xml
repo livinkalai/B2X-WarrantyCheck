@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Countries>
+    <Country>
+        <Code>717808</Code>
+        <Name>Belgium</Name>
+    </Country>
+    <Country>
+        <Code>254391</Code>
+        <Name>Spain</Name>
+    </Country>
+</Countries>

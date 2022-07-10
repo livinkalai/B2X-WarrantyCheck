@@ -1,0 +1,131 @@
+{
+    "returnImeiDatalist": [
+        {
+            "title": "Goods Id",
+            "propName": "new_commoditycode",
+            "visible": true,
+            "seqNo": 10
+        },
+        {
+            "title": "Commodity name",
+            "propName": "new_commodityname",
+            "visible": true,
+            "seqNo": 11
+        },
+        {
+            "title": "The end date for no reason return",
+            "propName": "new_returnendtime",
+            "visible": true,
+            "seqNo": 12
+        },
+        {
+            "title": "The end date for quality issue return",
+            "propName": "new_issuesreturn_stoptime",
+            "visible": true,
+            "seqNo": 13
+        },
+        {
+            "title": "The end date for swap",
+            "propName": "new_exchangeendtime",
+            "visible": true,
+            "seqNo": 14
+        },
+        {
+            "title": "The end date for repair",
+            "propName": "new_maintenanceendtime",
+            "visible": true,
+            "seqNo": 15
+        },
+        {
+            "title": "The start date for warranty",
+            "propName": "new_packetsstarttime",
+            "visible": true,
+            "seqNo": 16
+        },
+        {
+            "title": "Delivery Successfully time",
+            "propName": "new_casttime",
+            "visible": true,
+            "seqNo": 17
+        },
+        {
+            "title": "Ex-factory time",
+            "propName": "new_factorytime",
+            "visible": true,
+            "seqNo": 18
+        },
+        {
+            "title": "Ex-factory time+90 days",
+            "propName": "new_factorytimeaddtime",
+            "visible": true,
+            "seqNo": 19
+        },
+        {
+            "title": "Activation time",
+            "propName": "new_activate_date",
+            "visible": true,
+            "seqNo": 20
+        },
+        {
+            "title": "IW (New Warranty Status)",
+            "propName": "new_warrantystatus",
+            "visible": true,
+            "seqNo": 21
+        },
+        {
+            "title": "Serial Number",
+            "propName": "new_sn",
+            "visible": true,
+            "seqNo": 1
+        },
+        {
+            "title": "IMEI",
+            "propName": "imei",
+            "visible": true,
+            "seqNo": 2
+        },
+        {
+            "title": "IMEI 2",
+            "propName": "imei",
+            "visible": true,
+            "seqNo": 3
+        },
+        {
+            "title": "Warranty Code",
+            "propName": "new_maintenanceresult",
+            "visible": true,
+            "seqNo": 4
+        },
+        {
+            "title": "Warranty Status",
+            "propName": "new_maintenancereason",
+            "visible": true,
+            "seqNo": 5
+        },
+        {
+            "title": "FSN",
+            "propName": "fsn",
+            "visible": true,
+            "seqNo": 6
+        },
+        {
+            "title": "Sale country",
+            "propName": "b2b_country",
+            "visible": true,
+            "seqNo": 7
+        },
+        {
+            "title": "Activation country",
+            "propName": "active_country",
+            "visible": true,
+            "seqNo": 8
+        },
+        {
+            "title": "International Warranty",
+            "propName": "new_isinternationalwarranty",
+            "convertor": "(val)=>{ return val ? 'Yes' : 'No'}",
+            "visible": true,
+            "seqNo": 9
+        }
+    ]
+}

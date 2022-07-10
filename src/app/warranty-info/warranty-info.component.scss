@@ -1,0 +1,112 @@
+.warranty-content {
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.warranty-title {
+    font-size: 25px;
+}
+
+.warranty-sub-title {
+    font-size: 20px;
+}
+
+.warranty-input-container {
+    height: 50px;
+}
+
+.warranty-row {
+    width: 100%;
+}
+
+.warranty-row.first {
+    height: 100px;
+    border-bottom: 1px solid #e1dada;
+}
+
+.warranty-row.second {
+    margin-top: 3%;
+    height: 100px;
+    border-bottom: 1px solid #e1dada;
+}
+.warranty-row.third table {
+    text-align: left;
+}
+
+.warranty-row.third {
+    margin-top: 1%;
+}
+
+.warranty-row.third td {
+    width: 33%;
+    padding-left: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    min-width: 27px;
+    vertical-align: top;
+}
+
+.number-container {
+    margin-right: 24px;
+}
+
+.find-number-text,
+.country-code-sel {
+    width: 600px;
+    padding: 0px 0px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid #c7c5c5;
+}
+
+.continue-btn {
+    background-color: rgb(74, 144, 226);
+    color: white;
+}
+
+.resp-header {
+    text-align: center;
+}
+
+.resp-title {
+    font-weight: bold;
+}
+
+.resp-table {
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+.resp-table td {
+    border: 1px solid #c7c5c5;
+}
+
+button.mat-focus-indicator.continue-btn.btn.btn-primary.mat-button.mat-button-base.mat-button-disabled {
+    opacity: 0.3;
+    color: white;
+}
+
+.success-notification {
+    display: inline-block;
+    position: absolute;
+    right: 12%;
+    background: #5f9a5f;
+    color: white;
+    font-weight: bold;
+    width: 183px;
+    padding: 4px;
+    line-height: 17px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.success-notification .td1 {
+    width: 20% !important;
+}
+
+.success-notification .td2 {
+    width: 80% !important;
+}
