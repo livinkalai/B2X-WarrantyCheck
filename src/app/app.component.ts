@@ -13,6 +13,7 @@ export class AppComponent {
   title = 'B2X Warranty Check';
   common: any = {}
   constructor(private configService: ConfigService) {
+    this.common.brandName = 'Xiomi';
     this.common.spinner = this.getSpinner(); //Common spinner
     this.common.requestTimeout = 30000; //http request timeout (ms)
     this.common.countries = [];
